@@ -51,6 +51,9 @@ def copy_file_add_line_numbers(file_name_read, file_name_write):
     for line in read_f:
         ctr+=1
         write_f.write(str(ctr) + ':' + line)
+    
+    read_f.close()
+    write_f.close()
 
 if __name__ == '__main__':
     file1 = 'seneca1.txt'
